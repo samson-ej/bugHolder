@@ -3,3 +3,4 @@
 
 # ignore .vs directory for now
 .vs/
+Migrations/

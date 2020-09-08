@@ -54,8 +54,6 @@ C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\bugH
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\bugHolder.TagHelpers.input.cache
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\bugHolder.TagHelpers.output.cache
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\bugHolder.RazorCoreGenerate.cache
-C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -209,4 +207,5 @@ C:\Users\samso\Desktop\projects\bugHolder\bugHolder\bin\Debug\netcoreapp3.1\Micr
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\bugHolder.csproj.CoreCompileInputs.cache
-C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\bugHolder.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\samso\Desktop\projects\bugHolder\bugHolder\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs

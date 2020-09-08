@@ -2,7 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>WinExe</OutputType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200901220005_seed-1.cs" />
+    <Compile Remove="Migrations\20200901220005_seed-1.Designer.cs" />
+    <Compile Remove="Migrations\20200901220245_Seed-1.cs" />
+    <Compile Remove="Migrations\20200901220245_Seed-1.Designer.cs" />
+    <Compile Remove="Migrations\20200901221001_Seed-1.cs" />
+    <Compile Remove="Migrations\20200901221001_Seed-1.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />

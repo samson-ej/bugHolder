@@ -5,7 +5,7 @@
     
 }
 
-<h1>Index</h1>
+<h1>Bug List</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,9 +13,9 @@
 <table class="table">
     <thead>
         <tr>
-            @*<th>
+            <th>
                 @Html.DisplayNameFor(model => model.Id)
-            </th>*@
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
@@ -31,9 +31,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            @*<td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Id)
-            </td>*@
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>

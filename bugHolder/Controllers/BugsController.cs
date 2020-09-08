@@ -33,7 +33,8 @@ namespace bugHolder.Controllers
                 return NotFound();
             }
 
-            var bug = await _context.Bug.FirstOrDefaultAsync(b => b.Id == id);
+            var bug = await _context.Bug
+                .FirstOrDefaultAsync(b => b.Id == id);
             
             if (bug == null)
             {
