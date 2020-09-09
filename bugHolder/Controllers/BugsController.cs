@@ -20,10 +20,60 @@ namespace bugHolder.Controllers
         }
 
         // GET: Bugs
-        public async Task<IActionResult> Index()
+        //public async Task<IActionResult> Index()
+        //{
+        //    return View(await _context.Bug.ToListAsync());
+        //}
+
+        //public async Task<IActionResult> Index(string searchString)
+        //{
+        //    var bugs = from b in _context.Bug
+        //               select b;
+
+        //    if (!String.IsNullOrEmpty(searchString))
+        //    {
+        //        bugs = bugs.Where(s => s.Title.Contains(searchString));
+        //    }
+
+        //    return View(await bugs.ToListAsync());
+        //}
+
+        // GET: BugsStatus
+        public async Task<IActionResult> Index(string bugStatus, string searchString)
         {
-            return View(await _context.Bug.ToListAsync());
+            // Use LINQ to get list of statuses.
+            IQueryable<string> statusQuery = from b in _context.Bug
+                                             orderby b.Status
+                                             select b.Status;
+
+            var bugs = from b in _context.Bug
+                       select b;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                bugs = bugs.Where(s => s.Title.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(bugStatus))
+            {
+                bugs = bugs.Where(x => x.Status == bugStatus);
+            }
+
+            var bugStatusVM = new BugStatusViewModel
+            {
+                Statuses = new SelectList(await statusQuery.Distinct().ToListAsync()),
+                Bugs = await bugs.ToListAsync()
+            };
+
+            return View(bugStatusVM);
         }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
+
 
         // GET: Bugs/Details/5
         public async Task<IActionResult> Details(int? id)
