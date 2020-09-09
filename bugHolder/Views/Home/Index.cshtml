@@ -7,7 +7,8 @@
 
 
 
-<h1>Index</h1>
+<h1>Welcome to bugHolder</h1>
+<p>Let us keep track of your bugs/issues</p>
 
 @*<p>
     <a asp-action="Create">Create New</a>
@@ -32,8 +33,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
-        {
+@foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)
@@ -54,7 +54,7 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
-        }
+}
     </tbody>
 </table>*@
 
