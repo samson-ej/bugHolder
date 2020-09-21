@@ -4,3 +4,4 @@
 # ignore .vs directory for now
 .vs/
 Migrations/
+netcoreapp3.1/
